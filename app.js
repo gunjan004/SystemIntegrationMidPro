@@ -17,3 +17,4 @@ app.use(express.json());
 app.use('/api/user',authRoutes);
 
 app.listen(80, ()=> console.log('Server Up. Listening to port 80.........'));
+module.exports = app;
