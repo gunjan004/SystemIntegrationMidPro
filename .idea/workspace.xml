@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e964c21-e1e9-41be-8a0f-16fdb9519aac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/games.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/authenticationData.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/authenticationData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/validation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/verifyToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/verifyToken.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +48,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -79,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573539195368</updated>
       <workItem from="1573539199769" duration="831000" />
-      <workItem from="1573540088940" duration="6027000" />
+      <workItem from="1573540088940" duration="15055000" />
     </task>
     <servers />
   </component>

@@ -20,5 +20,16 @@ const loginValidation = (data) =>{
     return schema.validate(data);
 };
 
+const gameValidation = (data) =>{
+    const schema = Joi.object({
+        name : Joi.string().required(),
+        category : Joi.string().required(),
+        imageUrl : Joi.string().required(),
+        description : Joi.string().required(),
+        rating : Joi.string().required()
+    });
+    return schema.validate(data);
+};
 module.exports.signUpValidation = signUpValidation;
 module.exports.loginValidation = loginValidation;
+module.exports.gameValidation = gameValidation;
