@@ -9,6 +9,7 @@ API can be used to easily authenticate users for web applications.The server is 
     * [Sign Up](#sign-up)
     * [Get My Games](#get-my-games)
     * [Add New Games](#add-new-games)
+    * [Delete Game](#delete-game)
 * [Database Schema](#database-schema)
 * [References](#references)
 
@@ -91,7 +92,7 @@ User-Authentication-API can be used to login, signup user and get user specific 
 
 ### Get My Games
 > http://52.45.142.77:80/api/user/getAllGames
-* Method - POST
+* Method - GET
 * Request Payload(Header) -
 
 “token” :[TOKEN]
@@ -140,10 +141,10 @@ User-Authentication-API can be used to login, signup user and get user specific 
 
 {
 	"name" : "Car race",
-  "category" : "Sports",
-  "imageUrl" : "/resources/sports.png",
-  "description" : "description data",
-  "rating" : "4"
+  	"category" : "Sports",
+  	"imageUrl" : "/resources/sports.png",
+  	"description" : "description data",
+  	"rating" : "4"
 }
 
 
@@ -165,6 +166,39 @@ User-Authentication-API can be used to login, signup user and get user specific 
 {
     "status": 400,
     "message": "\"name\" is not allowed to be empty"
+}
+
+### Delete Game
+> http://52.45.142.77:80/api/user/deleteGame
+* Method - DELETE
+* Request Payload(Header) -
+
+“token” :[TOKEN]
+
+* Request Payload(Body) -
+{
+	"gameID": "5dd0befbb6a34e3f9bfa6da9"
+}
+
+
+* Response Payload- 
+
+{
+    "status": 200,
+    "message": "Game deleted successfully."
+}
+
+
+* Status codes - 
+   * 200 - success
+   * 400 - Access denied.. Token not provided
+   * 401 - Invalid token
+
+* Messages - 
+
+{
+    "status": 400,
+    "message": "Access denied.. Token not provided"
 }
 
 ## Database Schema
