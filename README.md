@@ -41,6 +41,7 @@ User-Authentication-API can be used to login, signup user and get user specific 
    * 400 - Invalid email/password
    
 * Messages - 
+
    {
     "status": 400,
     "message": "Email does not exist, please register!"
