@@ -18,24 +18,29 @@ User-Authentication-API can be used to login, signup user and get user specific 
 > In the examples on this page, you would replace [TOKEN] with the token returned by this API after user SignUp/Login.
 ### Login 
 > http://52.45.142.77:80/api/user/login
+
 * Method - Post 
+
 * Request Payload - 
-   
-   {
+ 
+ ```  
+ {
      "email" : "joey@gmail.com",
      "password" : "123456"
-   }
+ }
+```
    
 * Response Payload- 
     
-   {
-       "status": 200,
-       "id": "5dcd443345f9d61daf65ff9b",
-       "token":"[TOKEN]",
-       "name": "Joey Tribbiani",
-       "email": "joey@gmail.com"
-   }
-   
+```
+{
+  "status": 200,
+  "id": "5dcd443345f9d61daf65ff9b",
+  "token":"[TOKEN]",
+  "name": "Joey Tribbiani",
+  "email": "joey@gmail.com"
+} 
+```
 
 * Status codes -
    * 200 - success
@@ -43,10 +48,12 @@ User-Authentication-API can be used to login, signup user and get user specific 
    
 * Messages - 
 
+```
    {
     "status": 400,
     "message": "Email does not exist, please register!"
    }
+```
 
 ### Sign Up
 > http://52.45.142.77:80/api/user/signUp
