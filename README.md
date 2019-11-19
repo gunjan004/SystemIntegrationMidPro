@@ -60,6 +60,10 @@ User-Authentication-API can be used to login, signup user and get user specific 
 * Method - POST
 * Request Payload(Header) -
 
+```
+“token” :[TOKEN]
+```
+
 * Request Payload(Body) -
 ```
 {
@@ -102,7 +106,9 @@ User-Authentication-API can be used to login, signup user and get user specific 
 * Method - GET
 * Request Payload(Header) -
 
+```
 “token” :[TOKEN]
+```
 
 * Response Payload- 
 ```
@@ -142,7 +148,9 @@ User-Authentication-API can be used to login, signup user and get user specific 
 * Method - POST
 * Request Payload(Header) -
 
+```
 “token” :[TOKEN]
+```
 
 * Request Payload(Body) -
 ```
@@ -181,7 +189,9 @@ User-Authentication-API can be used to login, signup user and get user specific 
 * Method - DELETE
 * Request Payload(Header) -
 
+```
 “token” :[TOKEN]
+```
 
 * Request Payload(Body) -
 ```
