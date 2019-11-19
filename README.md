@@ -33,13 +33,13 @@ User-Authentication-API can be used to login, signup user and get user specific 
 * Response Payload- 
     
 ```
-{
-  "status": 200,
-  "id": "5dcd443345f9d61daf65ff9b",
-  "token":"[TOKEN]",
-  "name": "Joey Tribbiani",
-  "email": "joey@gmail.com"
-} 
+ {
+    "status": 200,
+    "id": "5dcd443345f9d61daf65ff9b",
+    "token":"[TOKEN]",
+    "name": "Joey Tribbiani",
+    "email": "joey@gmail.com"
+ } 
 ```
 
 * Status codes -
@@ -61,19 +61,19 @@ User-Authentication-API can be used to login, signup user and get user specific 
 * Request Payload(Header) -
 
 * Request Payload(Body) -
-
+```
 {
-	  "firstName" : "Barney",
+    "firstName" : "Barney",
     "lastName" : "Stinson",
     "gender" : "Male",
     "contactNo" : "1234567890",
     "email" : "barney@gmail.com",
     "password" : "123456"
 }
-
+```
 
 * Response Payload- 
-
+```
 {
     "status": 200,
     "token": [TOKEN],
@@ -82,7 +82,7 @@ User-Authentication-API can be used to login, signup user and get user specific 
     "email": "barney@gmail.com",
     "contactNo": "1234567890"
 }
-
+```
 
 * Status codes - 
    * 200 - success
@@ -90,12 +90,12 @@ User-Authentication-API can be used to login, signup user and get user specific 
    * 401 - Invalid token
 
 * Messages - 
-
+```
 {
     "status": 400,
     "message": "Email already exist.Try to Login.."
 }
-
+```
 
 ### Get My Games
 > http://52.45.142.77:80/api/user/getAllGames
