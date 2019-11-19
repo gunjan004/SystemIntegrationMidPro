@@ -147,11 +147,11 @@ User-Authentication-API can be used to login, signup user and get user specific 
 * Request Payload(Body) -
 ```
 {
-	"name" : "Car race",
-  	"category" : "Sports",
-  	"imageUrl" : "/resources/sports.png",
-  	"description" : "description data",
-  	"rating" : "4"
+    "name" : "Car race",
+    "category" : "Sports",
+    "imageUrl" : "/resources/sports.png",
+    "description" : "description data",
+    "rating" : "4"
 }
 ```
 
@@ -186,7 +186,7 @@ User-Authentication-API can be used to login, signup user and get user specific 
 * Request Payload(Body) -
 ```
 {
-	"gameID": "5dd0befbb6a34e3f9bfa6da9"
+    "gameID": "5dd0befbb6a34e3f9bfa6da9"
 }
 ```
 
@@ -277,9 +277,8 @@ const gamesSchema = new mongoose.Schema({
 ```
 
 ## References
-```
+
 - [JWT](https://jwt.io)
 - [Node.js](https://nodejs.org/en/)
 - [Express](https://expressjs.com)
 - [@hapi/joi](https://www.npmjs.com/package/@hapi/joi)
-```
