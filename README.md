@@ -1,7 +1,7 @@
 # System Integration Midterm: Backend
 SI Midterm Backend Project documentation
 
-API can be used to easily authenticate users for web applications.The server is hosted on AWS EC2.
+API can be used to easily authenticate users for Gamezz web application. The API is also used to add games to the repository, delete game from repository and also to fetch all games present in the repository. The server is hosted on AWS EC2.
 
 ## Table of content
 * [Get Started](#get-started)
@@ -14,12 +14,17 @@ API can be used to easily authenticate users for web applications.The server is 
 * [References](#references)
 
 ## Get Started
-User-Authentication-API can be used to login, signup user and get user specific information.
+User-Authentication-API can be used to login, signup user and get user specific information. The other APIs are used to get, add and delete games to and from the repository.
+
 > In the examples on this page, you would replace [TOKEN] with the token returned by this API after user SignUp/Login.
+
 ### Login 
+* URL -
 > http://52.45.142.77:80/api/user/login
 
-* Method - Post 
+* Method - 
+
+> POST 
 
 * Request Payload - 
  
@@ -56,6 +61,7 @@ User-Authentication-API can be used to login, signup user and get user specific 
 ```
 
 ### Sign Up
+
 > http://52.45.142.77:80/api/user/signUp
 * Method - POST
 * Request Payload(Header) -
