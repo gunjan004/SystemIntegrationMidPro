@@ -105,7 +105,7 @@ User-Authentication-API can be used to login, signup user and get user specific 
 “token” :[TOKEN]
 
 * Response Payload- 
-
+```
 {
     "status": 200,
     "game": [
@@ -129,7 +129,7 @@ User-Authentication-API can be used to login, signup user and get user specific 
         }
     ]
 }
-
+```
 
 * Status codes - 
    * 200 - success
@@ -145,7 +145,7 @@ User-Authentication-API can be used to login, signup user and get user specific 
 “token” :[TOKEN]
 
 * Request Payload(Body) -
-
+```
 {
 	"name" : "Car race",
   	"category" : "Sports",
@@ -153,15 +153,15 @@ User-Authentication-API can be used to login, signup user and get user specific 
   	"description" : "description data",
   	"rating" : "4"
 }
-
+```
 
 * Response Payload- 
-
+```
 {
     "status": 200,
     "message": "Game added successfully."
 }
-
+```
 
 * Status codes - 
    * 200 - success
@@ -169,11 +169,12 @@ User-Authentication-API can be used to login, signup user and get user specific 
    * 401 - Invalid token
 
 * Messages - 
-
+```
 {
     "status": 400,
     "message": "\"name\" is not allowed to be empty"
 }
+```
 
 ### Delete Game
 > http://52.45.142.77:80/api/user/deleteGame
@@ -183,18 +184,19 @@ User-Authentication-API can be used to login, signup user and get user specific 
 “token” :[TOKEN]
 
 * Request Payload(Body) -
+```
 {
 	"gameID": "5dd0befbb6a34e3f9bfa6da9"
 }
-
+```
 
 * Response Payload- 
-
+```
 {
     "status": 200,
     "message": "Game deleted successfully."
 }
-
+```
 
 * Status codes - 
    * 200 - success
@@ -202,18 +204,19 @@ User-Authentication-API can be used to login, signup user and get user specific 
    * 401 - Invalid token
 
 * Messages - 
-
+```
 {
     "status": 400,
     "message": "Access denied.. Token not provided"
 }
+```
 
 ## Database Schema
 
 MongoDB Atlas Database 
 
 * User Schema
-
+```
 const userSchema = new mongoose.Schema({
     firstName : {
         type : String,
@@ -244,9 +247,11 @@ const userSchema = new mongoose.Schema({
         required: true
     }
 });
+```
 
 * Game Schema
 
+```
 const gamesSchema = new mongoose.Schema({
     name : {
         type : String,
@@ -269,10 +274,12 @@ const gamesSchema = new mongoose.Schema({
         required : true
     }
 });
-
+```
 
 ## References
+```
 - [JWT](https://jwt.io)
 - [Node.js](https://nodejs.org/en/)
 - [Express](https://expressjs.com)
 - [@hapi/joi](https://www.npmjs.com/package/@hapi/joi)
+```
