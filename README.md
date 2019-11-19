@@ -22,7 +22,7 @@ User-Authentication-API can be used to login, signup user and get user specific 
 
 > http://52.45.142.77:80/api/user/login
 
-* Method - > POST 
+* Method - POST 
 
 * Request Payload - 
  
@@ -61,7 +61,9 @@ User-Authentication-API can be used to login, signup user and get user specific 
 ### Sign Up
 
 > http://52.45.142.77:80/api/user/signUp
+
 * Method - POST
+
 * Request Payload(Header) -
 
 ```
@@ -106,8 +108,11 @@ User-Authentication-API can be used to login, signup user and get user specific 
 ```
 
 ### Get My Games
+
 > http://52.45.142.77:80/api/user/getAllGames
+
 * Method - GET
+
 * Request Payload(Header) -
 
 ```
@@ -148,8 +153,11 @@ User-Authentication-API can be used to login, signup user and get user specific 
 
 
 ### Add New Games
+
 > http://52.45.142.77:80/api/user/addGame
+
 * Method - POST
+
 * Request Payload(Header) -
 
 ```
@@ -230,6 +238,7 @@ User-Authentication-API can be used to login, signup user and get user specific 
 MongoDB Atlas Database 
 
 * User Schema
+
 ```
 const userSchema = new mongoose.Schema({
     firstName : {
